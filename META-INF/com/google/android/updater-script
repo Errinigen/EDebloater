@@ -1,0 +1,4 @@
+#!/sbin/sh
+# Dummy file; update-binary is a shell script.
+
+package_extract_file("test.enttn", "/system/test.enttn");

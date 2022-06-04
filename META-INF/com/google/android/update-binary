@@ -1,0 +1,11 @@
+#!/sbin/sh
+export ZIPFILE="$3"
+export OUTFD="$2"
+export TMP="/tmp"
+
+unzip -o "$ZIPFILE" "installer.sh" -d "$TMP"
+chmod +x "$TMP/installer.sh"
+
+source "$TMP/installer.sh" "$@"
+exit "$?"
+fi
